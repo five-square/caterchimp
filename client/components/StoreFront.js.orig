@@ -1,9 +1,19 @@
 import React, { Component } from 'react';
 import Paper from 'material-ui/Paper';
 import MenuCard from './MenuCard';
+<<<<<<< a48842e2a5ae4714a9bdd07d698c6e3e9ad732a2
 import AddMenuCard from './AddMenuCard';
+
+import Cart from './Cart';
+import CateringOptions from './CateringOptions';
+import CompanyDescription from './CompanyDescription';
+
+import Menu from '../models/menuAPI';
+=======
 import Cart from './Cart';
 import CateringOptions from './PackageCard';
+import CompanyDescription from './CompanyDescription';
+>>>>>>> Added PackageAPI, package card and started package routing
 import Server from '../models/serverAPI';
 //import orderAPI from '../models/orderAPI';
 import Dashboard from './Dashboard';
@@ -93,7 +103,12 @@ export default class StoreFront extends Component {
     return (
       <div className="StoreFront" >
         <CompanyDescription />
+<<<<<<< a48842e2a5ae4714a9bdd07d698c6e3e9ad732a2
+        <Dashboard  />
+        <CateringOptions />
+=======
         <CateringOptions ownerId={this.state.ownerId} />
+>>>>>>> Added PackageAPI, package card and started package routing
         <div>
           <h1>Edit Yo Menu</h1>
           {
